@@ -249,7 +249,6 @@ li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   height: 100vh;
   display: flex;
   align-items: center;
@@ -687,124 +686,207 @@ li {
   justify-content: space-between;
 }
 
-.armin__cards {
+.home {
   background-image: url(./Rectangle\ 75.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1290px;
-  height: 490px;
-  padding-right: 90px;
 }
 
-.armin {
-  padding: 60px 0 30px;
+.home__container {
+  width: 1200px;
+  margin: auto;
 }
 
-.armin__top {
+/* From Uiverse.io by aarjaycreation */ 
+.main__socials {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.Link__instagram {
+  padding: 0.8em;
+  outline: none;
+  border: none;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.instagram {
+  fill: #cc39a4;
+}
+
+.Link__twitter {
+  padding: 0.8em;
+  outline: none;
+  border: none;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.twitter {
+  fill: #03a9f4;
+}
+
+.Link__github {
+  padding: 0.8em;
+  outline: none;
+  border: none;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.Link__discord {
+  padding: 0.8em;
+  outline: none;
+  border: none;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  fill: #8c9eff;
+}
+
+.Link__instagram:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.Link__instagram:hover .instagram {
+  fill: white;
+}
+
+.Link__twitter:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03a9f4;
+}
+
+.Link__twitter:hover .twitter {
+  fill: white;
+}
+
+.Link__github:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.Link__github:hover .github {
+  fill: white;
+}
+
+.Link__discord:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.Link__discord:hover .discord {
+  fill: white;
+}
+
+
+/* TOP */
+.home__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
-  margin-bottom: 40px;
-  width: 1280px;
-  position: relative;
-  right: 55px;
 }
 
-.armin__logo {
-  font-size: 24px;
-  color: #c9a38b;
+.home__p{
+  color: white;
+  margin-left: 500px;
 }
 
-.armin__social {
+.home__logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #c9a66b;
+}
+
+.home__menu {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  list-style: none;
+  gap: 30px;
 }
 
-.armin__follow {
-  color: #c9a38b;
-  display: flex;
-  margin-top: 25px;
+.home__menu li {
+  color: #fff;
+  cursor: pointer;
 }
 
-.armin__p{
-  color: #c9a38b;
-  margin-top: 25px;
+.home__menu li:hover {
+  color: #c9a66b;
 }
 
-.armin__icons {
-  display: flex;
-  gap: 10px;
+.home hr {
+  margin: 20px 0;
+  border: 1px solid #222;
 }
 
-.armin__icon {
-  display: flex;
-  justify-content: space-between;
-  gap: 100px;
-  position: absolute;
-}
-
-.armin__wrapper {
+/* CONTENT */
+.home__content {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  margin-bottom: 40px;
 }
 
-.armin__card {
-  width: 350px;
-}
-
-.armin__title {
-  font-size: 22px;
+.home__box h3 {
   margin-bottom: 15px;
-  color: #c9a38b;
-  padding-left: 50px;
+  color: #fff;
 }
 
-.armin__card p {
-  margin-bottom: 8px;
-  color: white;
-  padding-left: 50px;
+.home__box p {
+  margin: 5px 0;
+  color: #aaa;
+  cursor: pointer;
 }
 
-.armin__list {
-  list-style: none;
+.home__box p:hover {
+  color: #c9a66b;
 }
 
-.armin__list li {
-  margin-bottom: 10px;
-  color: white;
-  padding-left: 50px;
-}
-
-.armin__news {
+/* NEWS */
+.home__news {
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
-  align-items: center;
 }
 
-.armin__img {
+.home__news img {
   width: 60px;
   height: 60px;
-  border-radius: 5px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
-.armin__date {
+.home__news span {
   font-size: 12px;
-  color: #e9bd8c;
-  padding-left: 50px;
+  color: #888;
 }
 
-.armin__copy {
+.home__img{
+  width: 67px;
+  display: flex;
+}
+
+.home__bottom {
   text-align: center;
-  padding-bottom: 30px;
+  margin-top: 30px;
   color: #777;
+  font-size: 14px;
 }
 
 .img__logo {
@@ -813,12 +895,6 @@ li {
   width: 114px;
 }
 
-.armin__wrapper {
-  display: flex;
-  align-items: center;
-  gap: 138px;
-  width: 1200px;
-}
 
 button {
   padding: 17px 30px;
